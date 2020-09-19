@@ -27,6 +27,11 @@ const Nav = () => {
           </li>
         </ul>
       </div>
+      <div className="nav__hamContainer">
+        <div className="nav__ham"></div>
+        <div className="nav__ham"></div>
+        <div className="nav__ham"></div>
+      </div>
     </nav>
   );
 };
