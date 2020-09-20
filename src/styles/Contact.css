@@ -79,6 +79,7 @@ textarea {
   padding: 15px 25px;
   color: black;
   border: none;
+  outline: none;
   cursor: pointer;
   text-align: center;
   font-size: 16px;

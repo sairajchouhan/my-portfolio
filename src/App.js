@@ -13,7 +13,7 @@ function App() {
   }, []);
   setTimeout(() => {
     setIsLoading(false);
-  }, 1000);
+  }, 800);
 
   if (!isLoading) {
     return (
@@ -27,7 +27,7 @@ function App() {
     return (
       <div className="app__preloading">
         <img src={logo} alt="A logo that is used while preloading" />
-        <p>Designed and Developed by Chouhan Sairaj</p>
+        <p>Website Designed and Developed by Chouhan Sairaj</p>
       </div>
     );
   }
