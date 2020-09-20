@@ -34,7 +34,7 @@
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: #ffd3a7;
+    background-color: transparent;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -42,11 +42,18 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    box-shadow: 0 2px 5px 0 #ffd3a7 inset, 0 2px 5px 0 #ffd3a7;
+    transition: all .3s ease;
+}
+
+.footer__goToTop:hover {
+    box-shadow: 0 3px 7px 0 #ffd3a7 inset, 0 3px 7px 0 #ffd3a7;
 }
 
 .footer__goToTopIcon {
-    font-size: 2em;
-    color: #11354c;
+    font-size: 1.75em;
+    color: #ffc68c;
+
 }
 
 @media (max-width: 575.98px) {

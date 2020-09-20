@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import logo from './images/logo.png';
 // component imports
 import Hero from './components/Hero';
 import Contact from './components/Contact';
@@ -8,8 +9,12 @@ import Footer from './components/Footer';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    setIsLoading(false);
+    setIsLoading(true);
   }, []);
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 1000);
+
   if (!isLoading) {
     return (
       <div className="app">
@@ -19,7 +24,12 @@ function App() {
       </div>
     );
   } else {
-    return <h1>isLoading</h1>;
+    return (
+      <div className="app__preloading">
+        <img src={logo} alt="A logo that is used while preloading" />
+        <p>Designed and Developed by Chouhan Sairaj</p>
+      </div>
+    );
   }
 }
 

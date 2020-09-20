@@ -40,7 +40,7 @@ const Nav = () => {
         </ul>
       </div>
       <MobileNav />
-      <div class="blur"></div>
+      <div className="blur"></div>
     </nav>
   );
 };

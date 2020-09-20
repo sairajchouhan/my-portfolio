@@ -4,6 +4,10 @@ import Nav from './Nav';
 import '../styles/Hero.css';
 import myPic from '../images/raj.png';
 import { Link } from 'react-scroll';
+import { FaPlay } from 'react-icons/fa';
+import { FaStop } from 'react-icons/fa';
+import useSound from 'use-sound';
+import boopSfx from '../utils/djairhorn.mp3';
 
 const Hero = () => {
   // const trianglesRef = useRef();
@@ -13,6 +17,7 @@ const Hero = () => {
   //   const img = trianglesRef.current;
   //   img.style.transform = `translateX(${x}px) translateY(${y}px)`;
   // };
+  const [play, { isPlaying, stop }] = useSound(boopSfx, { volume: 1 });
 
   return (
     <>
@@ -29,19 +34,31 @@ const Hero = () => {
                 I love to work with react and deliver websites that make you
                 feel
               </p>
-              <p>awesome and dance</p>
+              <p>awesome and dance 👇👇</p>
             </div>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="hero__contentBtn"
-            >
-              Ping me
-            </Link>
+            <div className="hero__end">
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="hero__contentBtn"
+              >
+                Ping me
+              </Link>
+              <div
+                className="hero__contentPlayContainer"
+                onClick={isPlaying ? () => stop() : () => play()}
+              >
+                {isPlaying ? (
+                  <FaStop className="hero__contentPlayBtn-pause" />
+                ) : (
+                  <FaPlay className="hero__contentPlayBtn" />
+                )}
+              </div>
+            </div>
           </div>
           <div className="hero__img">
             <img src={myPic} alt="" />
