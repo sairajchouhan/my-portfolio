@@ -208,5 +208,9 @@ textarea {
     padding-bottom: 130px;
   }
 
+  .contact__form button {
+    margin: auto;
+    margin-top: 20px;
+  }
 
 }
