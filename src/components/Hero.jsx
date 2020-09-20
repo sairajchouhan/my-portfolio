@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import '../styles/Hero.css';
 import Nav from './Nav';
 import '../styles/Hero.css';
@@ -6,13 +6,13 @@ import myPic from '../images/raj.png';
 import { Link } from 'react-scroll';
 
 const Hero = () => {
-  const trianglesRef = useRef();
-  const onMouseMove = (e) => {
-    const x = (window.innerWidth - e.pageX * 5) / 80;
-    const y = (window.innerHeight - e.pageY * 5) / 80;
-    const img = trianglesRef.current;
-    img.style.transform = `translateX(${x}px) translateY(${y}px)`;
-  };
+  // const trianglesRef = useRef();
+  // const onMouseMove = (e) => {
+  //   const x = (window.innerWidth - e.pageX * 5) / 80;
+  //   const y = (window.innerHeight - e.pageY * 5) / 80;
+  //   const img = trianglesRef.current;
+  //   img.style.transform = `translateX(${x}px) translateY(${y}px)`;
+  // };
 
   return (
     <>

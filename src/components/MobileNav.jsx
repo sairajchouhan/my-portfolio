@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../styles/MobileNav.css';
 import { Link } from 'react-scroll';
 import LightSpeed from 'react-reveal/LightSpeed';
-import { FaTimes } from 'react-icons/fa';
 
 const MobileNav = () => {
   const [show, setShow] = useState(false);
