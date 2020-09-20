@@ -1,0 +1,131 @@
+.mobileNav {
+    display: none;
+    z-index: -99;
+}
+
+@media (max-width: 575.98px) {
+    .mobileNav {
+        display: block;
+        z-index: -999;
+    }
+
+    .mobileNav__light {
+        display: none;
+    }
+
+    .mobileNav__logo {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .mobileNav__hamContainer {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .mobileNav__ham:nth-child(1) {
+        width: 20px;
+        height: 4px;
+        background: #11354C;
+        margin: 3px;
+        position: relative;
+        margin-left: auto;
+        border-radius: 3px;
+    }
+
+    .mobileNav__ham:nth-child(2) {
+        width: 30px;
+        height: 4px;
+        background: #11354C;
+        margin: 3px;
+        position: relative;
+        margin-left: auto;
+        border-radius: 3px;
+    }
+
+    .mobileNav__ham:nth-child(3) {
+        width: 40px;
+        height: 4px;
+        background: #11354C;
+        margin: 3px;
+        position: relative;
+        margin-left: auto;
+        border-radius: 3px;
+    }
+
+    .mobileNav__links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0, 1);
+        backdrop-filter: blur(30px);
+
+    }
+
+    .mobileNav__linksContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobileNav__link {
+        font-size: 2.5em;
+        line-height: 100px;
+    }
+
+    .activeMob {
+        font-size: 3em;
+    }
+
+    .mobileNav__linksContainer.hide {
+        display: none;
+    }
+
+    .mobileNav__timesContainer {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .mobileNav__times:nth-child(1) {
+        width: 40px;
+        height: 4px;
+        background: #11354C;
+        position: absolute;
+        margin-left: auto;
+        border-radius: 3px;
+        transform: rotate(45deg)
+    }
+
+    .mobileNav__times:nth-child(2) {
+        width: 40px;
+        height: 4px;
+        background: #11354C;
+        position: absolute;
+        margin-left: auto;
+        border-radius: 3px;
+        transform: rotate(-45deg)
+    }
+
+}

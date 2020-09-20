@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Nav.css';
 import logo from '../images/logo.png';
 import { Link } from 'react-scroll';
+import MobileNav from './MobileNav';
 
 const Nav = () => {
   return (
@@ -17,9 +18,7 @@ const Nav = () => {
           <li>
             <a href="#!">Works</a>
           </li>
-          <li>
-            <a href="#!">Blog</a>
-          </li>
+
           <li>
             <a href="#!">About</a>
           </li>
@@ -35,14 +34,12 @@ const Nav = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <a href="#!">Blog</a>
+          </li>
         </ul>
       </div>
-
-      <div className="nav__hamContainer">
-        <div className="nav__ham"></div>
-        <div className="nav__ham"></div>
-        <div className="nav__ham"></div>
-      </div>
+      <MobileNav />
       <div class="blur"></div>
     </nav>
   );
