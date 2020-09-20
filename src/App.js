@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import logo from './images/logo.png';
-// component imports
+// component importss
 import Hero from './components/Hero';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
