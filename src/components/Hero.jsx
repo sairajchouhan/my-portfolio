@@ -3,6 +3,7 @@ import '../styles/Hero.css';
 import Nav from './Nav';
 import '../styles/Hero.css';
 import myPic from '../images/raj.png';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   const trianglesRef = useRef();
@@ -30,9 +31,17 @@ const Hero = () => {
               </p>
               <p>awesome and dance</p>
             </div>
-            <a className="hero__contentBtn" href="#!">
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="hero__contentBtn"
+            >
               Ping me
-            </a>
+            </Link>
           </div>
           <div className="hero__img">
             <img src={myPic} alt="" />

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Nav.css';
 import logo from '../images/logo.png';
+import { Link } from 'react-scroll';
 
 const Nav = () => {
   return (
@@ -23,15 +24,26 @@ const Nav = () => {
             <a href="#!">About</a>
           </li>
           <li>
-            <a href="#!">Contact</a>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
+
       <div className="nav__hamContainer">
         <div className="nav__ham"></div>
         <div className="nav__ham"></div>
         <div className="nav__ham"></div>
       </div>
+      <div class="blur"></div>
     </nav>
   );
 };
