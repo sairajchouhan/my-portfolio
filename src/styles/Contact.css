@@ -167,10 +167,13 @@ textarea {
     width: 100% !important;
   }
 
+  #message {
+    height: 150px !important;
+  }
+
   .contact__input:nth-child(1) {
     width: 97%;
   }
-
 
   .contact__svg {
     order: -1;
@@ -187,8 +190,6 @@ textarea {
     width: 50px;
     height: 50px;
   }
-
-
 
   .contact__svg p {
     font-size: 30px;
