@@ -3,6 +3,7 @@ import '../styles/Nav.css';
 import logo from '../images/logo.png';
 import { Link } from 'react-scroll';
 import MobileNav from './MobileNav';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Nav = () => {
   return (
@@ -21,7 +22,7 @@ const Nav = () => {
               to="works"
               spy={true}
               smooth={true}
-              offset={10}
+              offset={0}
               duration={500}
             >
               Works

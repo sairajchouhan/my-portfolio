@@ -5,7 +5,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaArrowUp } from 'react-icons/fa';
-import { Link as scrollLink, animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
   return (
