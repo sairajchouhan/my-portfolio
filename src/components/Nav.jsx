@@ -16,7 +16,16 @@ const Nav = () => {
       <div className="nav__items">
         <ul>
           <li>
-            <a href="#!">Works</a>
+            <Link
+              activeClass="active"
+              to="works"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              Works
+            </Link>
           </li>
 
           <li>

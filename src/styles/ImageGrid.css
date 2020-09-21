@@ -1,0 +1,21 @@
+.imageGrid {
+    width: 100%;
+    height: 100vh;
+}
+
+.grid__container {
+    background-color: aqua;
+    max-width: 1300px;
+    padding: 20px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid__project {
+    background: black;
+    grid-row: 1 / 2;
+}

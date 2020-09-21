@@ -5,6 +5,7 @@ import logo from './images/logo.png';
 import Hero from './components/Hero';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Works from './components/Works';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,12 +14,13 @@ function App() {
   }, []);
   setTimeout(() => {
     setIsLoading(false);
-  }, 800);
+  }, 400);
 
   if (!isLoading) {
     return (
       <div className="app">
         <Hero />
+        <Works id="works" />
         <Contact id="contact" />
         <Footer />
       </div>

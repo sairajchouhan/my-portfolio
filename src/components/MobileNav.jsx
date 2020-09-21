@@ -29,12 +29,13 @@ const MobileNav = () => {
             >
               <Link
                 activeClass="activeMob"
-                to=""
+                to="works"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={500}
                 className="mobileNav__link"
+                onClick={handleClick}
               >
                 Works
               </Link>
