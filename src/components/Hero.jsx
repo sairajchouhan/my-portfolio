@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Hero.css';
 import Nav from './Nav';
 import '../styles/Hero.css';
 import myPic from '../images/raj.png';
@@ -34,7 +33,15 @@ const Hero = () => {
                 I love to work with react and deliver websites that make you
                 feel
               </p>
-              <p>awesome and dance 👇👇</p>
+              <p>
+                awesome and dance{' '}
+                <span
+                  role="img"
+                  aria-label="owner is saying to click the below play button"
+                >
+                  👇👇
+                </span>{' '}
+              </p>
             </div>
             <div className="hero__end">
               <Link

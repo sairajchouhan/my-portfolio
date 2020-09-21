@@ -4,18 +4,62 @@
 }
 
 .grid__container {
-    background-color: aqua;
+    background-color: rgb(208, 177, 233);
     max-width: 1300px;
     padding: 20px;
     height: 100vh;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
 }
 
 .grid__project {
-    background: black;
-    grid-row: 1 / 2;
+    background-color: rgb(130, 61, 187);
+    width: 100%;
+    text-align: center;
+    height: fit-content;
+}
+
+.grid__project img {
+    width: 100%;
+    display: block
+}
+
+.grid__project p {
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 1129px) {
+
+    .grid__container {
+        grid-template-rows: repeat(2, 320px) !important;
+    }
+
+}
+
+@media screen and (max-width: 759px) {
+
+    .grid__container {
+        grid-template-rows: repeat(2, minmax(400px, 0px)) !important;
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+    .grid__container {
+        padding: 0px;
+        grid-template-rows: repeat(auto-fill, minmax(300px, 300px));
+
+    }
+
+    .grid__project p {
+        padding: 5px 0;
+        font-size: 1em;
+    }
+
 }
