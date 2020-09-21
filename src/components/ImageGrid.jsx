@@ -12,29 +12,19 @@ const ImageGrid = () => {
     <div className="imageGrid">
       <div className="grid__container">
         <div className="grid__project">
-          <LightboxImg img={reactAmazonClone} title={'This is a slack clone'} />
-          {/* <img src={reactAmazonClone} alt="" />
-          <p>This is a slack clone</p> */}
+          <LightboxImg img={reactAmazonClone} title={'React Amazon Clone'} />
         </div>
         <div className="grid__project">
-          <LightboxImg img={reactSlackClone} title={'This is a slack clone'} />
-          {/* <img src={reactSlackClone} alt="" />
-          <p>This is a slack clone</p> */}
+          <LightboxImg img={reactSlackClone} title={'React Slack Clone'} />
         </div>
         <div className="grid__project">
-          <LightboxImg img={movieList} title={'This is a slack clone'} />
-          {/* <img src={movieList} alt="" />
-          <p>This is a slack clone</p> */}
+          <LightboxImg img={movieList} title={'Movie List App'} />
         </div>
         <div className="grid__project">
-          <LightboxImg img={FindYourDog} title={'This is a slack clone'} />
-          {/* <img src={FindYourDog} alt="" />
-          <p>This is a slack clone</p> */}
+          <LightboxImg img={FindYourDog} title={'Find Your Dog'} />
         </div>
         <div className="grid__project">
-          <LightboxImg img={csClub} title={'This is a slack clone'} />
-          {/* <img src={csClub} alt="" />
-          <p>This is a slack clone</p> */}
+          <LightboxImg img={csClub} title={'IIITDM CS-Club Website'} />
         </div>
       </div>
     </div>

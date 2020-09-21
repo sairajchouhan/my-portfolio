@@ -191,12 +191,12 @@
     width: 100%;
   }
 
-  .hero__contentPlay {
+  .hero__contentPlayContainer {
     display: none;
   }
 
   .hero__end {
-
+    margin: 0 auto;
     width: 90%;
   }
 }
