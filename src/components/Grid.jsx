@@ -1,12 +1,13 @@
 import React from 'react';
 import GridItem from './GridItem';
-import csClub from '../images/gallery/csClub.png';
+
 import '../styles/Grid.css';
 // These are images
-import FindYourDog from '../images/gallery/FindYourDog.png';
-import movieList from '../images/gallery/movieList.png';
-import reactAmazonClone from '../images/gallery/reactAmazonClone.png';
-import reactSlackClone from '../images/gallery/reactSlackClone.png';
+import FindYourDog from '../images/gallery/FindYourDog.jpg';
+import movieList from '../images/gallery/movieList.jpg';
+import reactAmazonClone from '../images/gallery/reactAmazonClone.jpg';
+import reactSlackClone from '../images/gallery/reactSlackClone.jpg';
+import csClub from '../images/gallery/csClub.jpg';
 
 const Grid = () => {
   return (
