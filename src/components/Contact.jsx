@@ -3,7 +3,7 @@ import '../styles/Contact.css';
 import chatSvg from '../images/love.svg';
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact__container">
         <div className="contact__form">
           <form>

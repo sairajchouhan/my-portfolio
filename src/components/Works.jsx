@@ -7,7 +7,7 @@ import ImageGrid from './ImageGrid';
 
 const Works = () => {
   return (
-    <div className="works">
+    <div className="works" id="works">
       <div className="works__mockups">
         <div className="works__mockups-heading">
           <p>Let's check some of my works</p>

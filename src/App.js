@@ -20,8 +20,8 @@ function App() {
     return (
       <div className="app">
         <Hero />
-        <Works id="works" />
-        <Contact id="contact" />
+        <Works />
+        <Contact />
         <Footer />
       </div>
     );

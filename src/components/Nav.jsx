@@ -21,7 +21,7 @@ const Nav = () => {
               to="works"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-60}
               duration={500}
             >
               Works
@@ -37,7 +37,7 @@ const Nav = () => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-60}
               duration={500}
             >
               Contact
