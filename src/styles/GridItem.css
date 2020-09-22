@@ -1,0 +1,10 @@
+.des {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.des a {
+    font-size: 1.2em;
+    color: #11354c;
+}

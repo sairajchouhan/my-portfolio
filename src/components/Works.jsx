@@ -3,6 +3,7 @@ import '../styles/Works.css';
 import amazon from '../images/amazon.png';
 import slack from '../images/slack.png';
 import spotify from '../images/spotify.png';
+import Grid from './Grid';
 
 const Works = () => {
   return (
@@ -17,6 +18,7 @@ const Works = () => {
           <img src={slack} alt="" />
         </div>
       </div>
+      <Grid />
     </div>
   );
 };

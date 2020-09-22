@@ -21,8 +21,10 @@ function App() {
       <div className="app">
         <Hero />
         <Works />
-        <Contact />
-        <Footer />
+        <div style={{ display: 'block' }}>
+          <Contact />
+          <Footer />
+        </div>
       </div>
     );
   } else {
