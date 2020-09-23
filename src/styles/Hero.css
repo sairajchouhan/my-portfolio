@@ -72,9 +72,8 @@
 .hero__end {
   display: flex;
   align-items: center;
-
-  width: 30%;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .hero__contentPlayContainer {
@@ -86,6 +85,7 @@
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .hero__contentPlayBtn {
@@ -104,6 +104,7 @@
     flex-direction: column;
     text-align: center;
     height: 90vh;
+    padding-top: 70px;
   }
 
   .hero__img {
@@ -130,7 +131,7 @@
 
   .hero__contentBtn {
     width: 50% !important;
-    margin: auto;
+    margin: 0;
     padding: 15px 10px !important;
     font-size: 25px;
     margin-top: 10px;
@@ -147,6 +148,10 @@
 
   .hero__content .hero__contentSubtitle>p {
     font-size: 17px;
+  }
+
+  .hero__end {
+    justify-content: center;
   }
 }
 
@@ -185,7 +190,7 @@
   }
 
   .hero__contentBtn {
-    margin: auto;
+    margin: 0 auto;
   }
 
   .hero__content {
@@ -198,6 +203,7 @@
 
   .hero__end {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
+    justify-content: center;
   }
 }

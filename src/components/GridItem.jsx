@@ -20,8 +20,8 @@ const GridItem = ({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <div onClick={() => setIsOpen(true)}>
-        <img src={img} alt={title} />
+      <div>
+        <img src={img} alt={title} onClick={() => setIsOpen(true)} />
         <div className="des">
           <a
             href={githubRepo}

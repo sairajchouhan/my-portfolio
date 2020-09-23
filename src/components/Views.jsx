@@ -31,7 +31,13 @@ const Views = () => {
           </p>
           <p className="views__pwj">
             If you also wanna be part of the awesome community click{' '}
-            <a href="https://www.cleverprogrammer.com/pwj">here</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.cleverprogrammer.com/pwj"
+            >
+              here
+            </a>
           </p>
         </div>
       </div>
