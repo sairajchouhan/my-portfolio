@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Works from './components/Works';
+import Views from './components/Views';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,12 +15,13 @@ function App() {
   }, []);
   setTimeout(() => {
     setIsLoading(false);
-  }, 400);
+  }, 1000);
 
   if (!isLoading) {
     return (
       <div className="app">
         <Hero />
+        <Views />
         <Works />
         <div style={{ display: 'block' }}>
           <Contact />
