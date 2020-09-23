@@ -49,12 +49,12 @@ a {
     cursor: pointer;
 }
 
-.active {
+/* .active {
     color: white;
     background-color: #11354C;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-}
+} */
 
 @media (max-width: 575.98px) {
     .nav__items a {

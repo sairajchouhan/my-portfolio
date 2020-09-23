@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Works from './components/Works';
 import Views from './components/Views';
+import About from './components/About';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,7 +16,7 @@ function App() {
   }, []);
   setTimeout(() => {
     setIsLoading(false);
-  }, 1000);
+  }, 100);
 
   if (!isLoading) {
     return (
@@ -23,6 +24,7 @@ function App() {
         <Hero />
         <Views />
         <Works />
+        <About />
         <div style={{ display: 'block' }}>
           <Contact />
           <Footer />

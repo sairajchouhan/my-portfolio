@@ -28,6 +28,7 @@
     align-items: flex-end;
     flex-direction: column;
     padding-right: 30px;
+    box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.16);
 }
 
 .views__content p {

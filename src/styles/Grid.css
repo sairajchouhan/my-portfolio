@@ -5,7 +5,7 @@
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     /* added margin bottom to push the contact a bit down so that it donse seen blurry in nav bar */
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .grid__item {

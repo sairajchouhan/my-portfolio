@@ -17,11 +17,10 @@ const Nav = () => {
         <ul>
           <li>
             <Link
-              activeClass="active"
               to="works"
               spy={true}
               smooth={true}
-              offset={-60}
+              offset={0} // -60
               duration={500}
             >
               Works
@@ -29,16 +28,24 @@ const Nav = () => {
           </li>
 
           <li>
-            <a href="#!">About</a>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0} // -70
+              duration={500}
+            >
+              About
+            </Link>
           </li>
           <li>
             <Link
-              activeClass="active"
               to="contact"
               spy={true}
               smooth={true}
-              offset={-60}
+              offset={0} // -70
               duration={500}
+              // onClick={() => scroll.scrollMore(0)}
             >
               Contact
             </Link>

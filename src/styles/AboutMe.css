@@ -1,0 +1,150 @@
+.aboutMe {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.aboutMe__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.aboutMe__container img {
+    width: 19%;
+    height: 60%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+
+}
+
+.aboutMe__content {
+
+    border-radius: 7px;
+    width: 75%;
+    margin-left: auto;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.aboutMe__content-wrapper {
+    background-color: #F0F0F0;
+    width: 100%;
+    padding: 50px;
+    padding-left: 100px;
+    margin-right: 55px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.16);
+}
+
+.aboutMe__content p {
+    max-width: 100%;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+
+
+.aboutMe__qna-ul {
+    list-style: none;
+    color: #11354C;
+    font-size: 1em;
+    margin-right: 2em;
+
+}
+
+.aboutMe__qna-li {
+    margin-bottom: 5px;
+}
+
+.aboutMe__qna-uls {
+    display: flex;
+    justify-content: 'flex-start'
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutMe__content {
+        height: 50%;
+        margin-right: 30px;
+        width: 65%;
+    }
+
+
+    .aboutMe__content-wrapper {
+        padding-left: 50px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .aboutMe__content p {
+        max-width: 100%;
+        line-height: 40px;
+        font-size: 1.5em;
+    }
+
+    .aboutMe__content-wrapper {
+        margin-right: 0;
+    }
+
+    .aboutMe__content {
+        width: 100%;
+        margin: 0 20px;
+        padding: 0 30px;
+    }
+
+    .aboutMe__container img {
+        display: none;
+    }
+
+    .aboutMe__container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .aboutMe__content p {
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .aboutMe__content-wrapper {
+        padding: 20px;
+        width: 100%;
+        height: 100vh !important;
+    }
+
+    .aboutMe__content {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .aboutMe__qna-ul {
+        margin-right: 20px;
+    }
+
+    .aboutMe__qna-li {
+        font-size: 0.9em;
+    }
+
+    .aboutMe__content-wrapper {
+        margin-right: 0;
+    }
+
+    .aboutMe__qna-uls {
+        justify-content: 'space-between' !important;
+    }
+
+
+}
