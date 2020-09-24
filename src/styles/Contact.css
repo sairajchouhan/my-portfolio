@@ -34,7 +34,7 @@ textarea {
   margin: 10px 10px;
 }
 
-.contact__input>input {
+.contact__input > input {
   height: 30px;
   border-radius: 5px;
   outline: none;
@@ -104,11 +104,10 @@ textarea {
 .contact__svg p {
   font-size: 50px;
   margin-top: 20px;
-  margin-left: 30px
+  margin-left: 30px;
 }
 
 @media (min-width: 575.98px) and (max-width: 768px) {
-
   .contact__svg {
     display: block;
   }
@@ -128,7 +127,7 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    transform: translateY(50px)
+    transform: translateY(50px);
   }
 
   .contact__svg img {
@@ -143,10 +142,12 @@ textarea {
     margin-left: 10px;
     order: -1;
   }
-
 }
 
 @media (max-width: 575.98px) {
+  .contact {
+    height: 80vh;
+  }
   .contact__container {
     flex-direction: column;
   }
@@ -181,7 +182,6 @@ textarea {
     flex-direction: row;
     justify-content: flex-start;
     transform: translateY(50px);
-
   }
 
   .contact__svg img {
@@ -202,12 +202,11 @@ textarea {
   }
 
   .contact__container {
-    padding-bottom: 130px;
+    height: fit-content;
   }
 
   .contact__form button {
     margin: auto;
     margin-top: 20px;
   }
-
 }

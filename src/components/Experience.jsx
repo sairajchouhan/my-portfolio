@@ -61,7 +61,7 @@ const Experience = () => {
                   Position of responsibilities ?
                 </p>
               </div>
-              <div className="exp__a">
+              <div className="exp__a" style={{ color: '#11354c' }}>
                 <p>
                   # Frontend developer for{' '}
                   <a

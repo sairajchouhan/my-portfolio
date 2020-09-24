@@ -67,6 +67,7 @@
 }
 .exp__a a {
   padding: 0;
+  color: black;
 }
 .exp__a a:hover {
   text-decoration: underline;
