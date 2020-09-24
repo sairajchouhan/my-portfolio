@@ -1,84 +1,82 @@
 .footer {
-    background-color: #11354c;
-    height: 20vh;
-    color: white;
+  background-color: #11354c;
+  height: 20vh;
+  color: white;
+  display: block;
 }
 
 .footer__container {
-    width: 100%;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
-.footer__icons>ul {
-    display: flex;
-    list-style-type: none;
-    margin-bottom: 20px;
+.footer__icons > ul {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 20px;
 }
 
 .footer__icons a {
-    color: rgb(200, 216, 224);
-    transition: all 0.1s linear;
-    font-size: 2em;
+  color: rgb(200, 216, 224);
+  transition: all 0.1s linear;
+  font-size: 2em;
 }
 
 .footer__icons a:hover {
-    color: white;
+  color: white;
 }
 
 .footer__goToTop {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: transparent;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 2px 5px 0 #ffd3a7 inset, 0 2px 5px 0 #ffd3a7;
-    transition: all .2s ease;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 #ffd3a7 inset, 0 2px 5px 0 #ffd3a7;
+  transition: all 0.2s ease;
 }
 
 .footer__goToTop:hover {
-    box-shadow: 0 3px 7px 0 #ffd3a7 inset, 0 3px 7px 0 #ffd3a7;
+  box-shadow: 0 3px 7px 0 #ffd3a7 inset, 0 3px 7px 0 #ffd3a7;
 }
 
 .footer__goToTopIcon {
-    font-size: 1.75em;
-    color: #ffc68c;
-
+  font-size: 1.75em;
+  color: #ffc68c;
 }
 
 @media (max-width: 575.98px) {
-    .footer {
-        margin-top: 20px;
-    }
+  .footer {
+    margin-top: 20px;
+  }
 
-    .footer__goToTopIcon {
-        font-size: 1.5em;
+  .footer__goToTopIcon {
+    font-size: 1.5em;
+  }
 
-    }
+  .contact__svg {
+    margin-bottom: 50px;
+  }
 
-    .contact__svg {
-        margin-bottom: 50px;
+  #message {
+    height: 200px;
+  }
 
-    }
-
-    #message {
-        height: 200px;
-    }
-
-    .footer__goToTop {
-        width: 40px;
-        height: 40px;
-        bottom: 30px;
-        right: 10px;
-    }
+  .footer__goToTop {
+    width: 40px;
+    height: 40px;
+    bottom: 30px;
+    right: 10px;
+  }
 }

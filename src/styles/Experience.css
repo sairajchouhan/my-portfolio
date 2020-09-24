@@ -75,13 +75,13 @@
 
 @media screen and (max-width: 1024px) {
   .exp__content {
-    height: 50%;
     margin-right: 30px;
     width: 65%;
   }
 
   .exp__content-wrapper {
     padding-left: 50px;
+    height: auto;
   }
 }
 

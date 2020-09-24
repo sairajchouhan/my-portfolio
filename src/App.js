@@ -25,10 +25,9 @@ function App() {
         <Views />
         <Works />
         <About />
-        <div style={{ display: 'block' }}>
-          <Contact />
-          <Footer />
-        </div>
+
+        <Contact />
+        <Footer />
       </div>
     );
   } else {
