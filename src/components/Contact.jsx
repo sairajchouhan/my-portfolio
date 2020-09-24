@@ -51,6 +51,9 @@ const Contact = () => {
         );
         console.log('message sent', response.data);
         handleDisplayMessage('Message sent successfully');
+        setName('');
+        setEmail('');
+        setMessage('');
       } catch (err) {
         handleDisplayMessage('Server Error');
       }
