@@ -44,8 +44,8 @@ const Experience = () => {
                 <SiRedux className="exp__icon" />
                 <SiFirebase className="exp__icon" />
                 <p style={{ marginTop: '7px' }}>
-                  I absolutely love to build full stack applicatios using React
-                  as fontend Node and Firebase as a backend.React it is my super
+                  I love to build full stack applications using React as
+                  frontend, Node and Firebase as a backend.React it is my super
                   power #ReactRider and make webistes that highly satisfy user
                   needs and make your business grow.
                 </p>

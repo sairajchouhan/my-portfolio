@@ -146,7 +146,7 @@ textarea {
 
 @media (max-width: 575.98px) {
   .contact {
-    height: 80vh;
+    height: 90vh;
   }
   .contact__container {
     flex-direction: column;

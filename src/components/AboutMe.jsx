@@ -72,7 +72,7 @@ const AboutMe = () => {
                     introduce new ideas and take initiatives
                   </li>
                   <li className="aboutMe__qna-li"># I am a problem solver</li>
-                  <li className="aboutMe__qna-li"># I communicate vety well</li>
+                  <li className="aboutMe__qna-li"># I communicate very well</li>
                   <li className="aboutMe__qna-li">
                     # Open to new ideas and tecnologies
                   </li>
