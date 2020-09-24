@@ -1,20 +1,21 @@
 import React from 'react';
 import '../styles/AboutMe.css';
-import raj2 from '../images/raj-2.jpg';
+import whoami from '../images/whoami.jpg';
 
 const AboutMe = () => {
   return (
     <div className="aboutMe">
       <div className="aboutMe__container">
         <img
-          src={raj2}
+          src={whoami}
           alt="Two people working on a pc"
           className="views__img"
         />
         <div className="aboutMe__content">
           <div className="aboutMe__content-wrapper">
             <div className="aboutMe__qna" style={{ marginBottom: '20px' }}>
-              <p style={{ marginBottom: '10px' }}>
+              <h2 style={{ marginBottom: '15px' }}>A Little bit about me</h2>
+              <p>
                 {' '}
                 <span role="img" aria-label="poning right">
                   👉
@@ -37,7 +38,7 @@ const AboutMe = () => {
             </div>
             {/* what defines me */}
             <div className="aboutMe__qna" style={{ marginBottom: '20px' }}>
-              <p style={{ marginBottom: '10px' }}>
+              <p style={{ marginBottom: '7px' }}>
                 {' '}
                 <span role="img" aria-label="poning right">
                   👉
@@ -57,7 +58,7 @@ const AboutMe = () => {
             </div>
             {/* why me */}
             <div className="aboutMe__qna">
-              <p style={{ marginBottom: '10px' }}>
+              <p style={{ marginBottom: '7px' }}>
                 {' '}
                 <span role="img" aria-label="poning right">
                   👉
