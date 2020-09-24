@@ -49,7 +49,6 @@ const Contact = () => {
           'https://us-central1-portfolio-e0fa5.cloudfunctions.net/api/',
           { name, email, message }
         );
-        console.log('message sent', response.data);
         handleDisplayMessage('Message sent successfully');
         setName('');
         setEmail('');

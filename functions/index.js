@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   console.log(req.body);
   const { name, email, message } = req.body;
-  const mailOptions = {
+  const mailOptionsToMe = {
     from: 'lotedivra@gmail.com', // sender
     to: 'sairaj2119@gmail.com', // receiver
     subject: `A Message from ${name}`, // Subject
@@ -50,7 +50,27 @@ app.post('/', (req, res) => {
           <p>${message}</p>
           `,
   };
-  transport.sendMail(mailOptions, (err, result) => {
+  const mailOptionsToUser = {
+    from: 'lotedivra@gmail.com', // sender
+    to: email, // receiver
+    subject: `A Message from Sairaj`, // Subject
+    html: `<p>Thank You for contacting me</p>
+          <p>I will reach you soon. Have a good time</p>
+          `,
+  };
+  transport.sendMail(mailOptionsToMe, (err, result) => {
+    if (err) {
+      res.json({
+        message: err,
+      });
+    } else {
+      transport.close();
+      res.json({
+        message: 'Email has been sent: check your inbox!',
+      });
+    }
+  });
+  transport.sendMail(mailOptionsToUser, (err, result) => {
     if (err) {
       res.json({
         message: err,
