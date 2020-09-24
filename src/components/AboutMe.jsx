@@ -69,7 +69,7 @@ const AboutMe = () => {
                 <ul className="aboutMe__qna-ul">
                   <li className="aboutMe__qna-li">
                     # Not only doing what is said to do but i constantly
-                    introduce new ideas and take iniatives
+                    introduce new ideas and take initiatives
                   </li>
                   <li className="aboutMe__qna-li"># I am a problem solver</li>
                   <li className="aboutMe__qna-li"># I communicate vety well</li>

@@ -41,16 +41,35 @@
   background-color: #f0f0f0;
   width: 100%;
   padding: 30px;
+  height: 100%;
   margin: 20px;
   border-radius: 6px;
   box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.16);
   padding-left: 60px;
+}
+.exp__qna {
+  padding-bottom: 20px;
 }
 
 .exp__content p {
   max-width: 100%;
   line-height: 40px;
   font-size: 1em;
+}
+
+.exp__icon {
+  font-size: 3em;
+  margin-right: 15px;
+}
+
+.exp__a {
+  margin-top: 10px;
+}
+.exp__a a {
+  padding: 0;
+}
+.exp__a a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {
@@ -108,21 +127,8 @@
     padding: 20px;
     margin: 0;
   }
-
-  .exp__qna-ul {
-    margin-right: 20px;
-  }
-
-  .exp__qna-li {
-    font-size: 0.9em;
-  }
-
   .exp__content-wrapper {
     margin-right: 0;
-  }
-
-  .exp__qna-uls {
-    justify-content: 'space-between' !important;
   }
   .exp__container {
     display: relative;
