@@ -10,13 +10,12 @@ app.use(cors({ origin: true }));
 app.use(express.json());
 
 const myOAuth2Client = new OAuth2(
-  '717967529834-694sehmfju2035i3h8de6a1f6rmsb0t2.apps.googleusercontent.com',
-  'jsCWlIoUTsoPZA7ke3lD6Kk_',
+  functions.config().client.key,
+  functions.config().clientsecret.key,
   'https://developers.google.com/oauthplayground'
 );
 myOAuth2Client.setCredentials({
-  refresh_token:
-    '1//04UOCVgYXpHkGCgYIARAAGAQSNwF-L9IrZcNjdKmt1--dMgdtAzRdUASUvblWuQr0eLgwg4STAZNt6mTCUGT1q3oJe-rkb92WLe0',
+  refresh_token: functions.config().refreshtoken.key,
 });
 const myAccessToken = myOAuth2Client.getAccessToken();
 
@@ -25,24 +24,18 @@ const transport = nodemailer.createTransport({
   auth: {
     type: 'OAuth2',
     user: 'lotedivra@gmail.com',
-    clientId:
-      '717967529834-694sehmfju2035i3h8de6a1f6rmsb0t2.apps.googleusercontent.com',
-    clientSecret: 'jsCWlIoUTsoPZA7ke3lD6Kk_',
-    refreshToken:
-      '1//04UOCVgYXpHkGCgYIARAAGAQSNwF-L9IrZcNjdKmt1--dMgdtAzRdUASUvblWuQr0eLgwg4STAZNt6mTCUGT1q3oJe-rkb92WLe0',
+    clientId: functions.config().client.key,
+    clientSecret: functions.config().clientsecret.key,
+    refreshToken: functions.config().refreshtoken.key,
     accessToken: myAccessToken,
   },
-});
-
-app.get('/', (req, res) => {
-  res.send('this is root');
 });
 
 app.post('/', (req, res) => {
   console.log(req.body);
   const { name, email, message } = req.body;
   const mailOptionsToMe = {
-    from: 'lotedivra@gmail.com', // sender
+    from: functions.config().user.key, // sender
     to: 'sairaj2119@gmail.com', // receiver
     subject: `A Message from ${name}`, // Subject
     html: `<p>${name}</p>
@@ -51,7 +44,7 @@ app.post('/', (req, res) => {
           `,
   };
   const mailOptionsToUser = {
-    from: 'lotedivra@gmail.com', // sender
+    from: functions.config().user.key, // sender
     to: email, // receiver
     subject: `A Message from Sairaj`, // Subject
     html: `<p>Thank You for contacting me</p>
@@ -84,7 +77,4 @@ app.post('/', (req, res) => {
   });
 });
 
-app.get('/app', (req, res) => {
-  res.send('this is another');
-});
 exports.api = functions.https.onRequest(app);

@@ -25,7 +25,6 @@ function App() {
         <Views />
         <Works />
         <About />
-
         <Contact />
         <Footer />
       </div>
