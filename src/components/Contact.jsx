@@ -6,6 +6,7 @@ import { FaTimes } from 'react-icons/fa';
 import axios from 'axios';
 
 const Contact = () => {
+  const POST_URL = process.env.REACT_APP_POST_URL;
   const errMsgRef = useRef();
   const [show, setShow] = useState(false);
   const [name, setName] = useState('');
@@ -45,10 +46,8 @@ const Contact = () => {
       handleDisplayMessage("Dude..check you email it's probably invalid ");
     } else {
       try {
-        const response = await axios.post(
-          'https://us-central1-portfolio-e0fa5.cloudfunctions.net/api/',
-          { name, email, message }
-        );
+        const response = await axios.post(POST_URL, { name, email, message });
+        console.log(response.data);
         handleDisplayMessage('Message sent successfully');
         setName('');
         setEmail('');
