@@ -6,7 +6,6 @@ import { FaTimes } from 'react-icons/fa';
 import axios from 'axios';
 
 const Contact = () => {
-  const POST_URL = process.env.REACT_APP_POST_URL;
   const errMsgRef = useRef();
   const [show, setShow] = useState(false);
   const [name, setName] = useState('');
