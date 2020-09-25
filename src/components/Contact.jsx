@@ -16,14 +16,14 @@ const Contact = () => {
   const handleClose = () => {
     const errDiv = errMsgRef.current;
     setShow(false);
-    errDiv.style.transform = 'translateX(-730px)';
+    errDiv.style.transform = 'translateX(-100%)';
   };
 
   const handleDisplayMessage = (errMsg) => {
     const errDiv = errMsgRef.current;
     setDisplayMessage(errMsg);
     setShow(true);
-    errDiv.style.transform = 'translateX(0px)';
+    errDiv.style.transform = 'translateX(0%)';
     setTimeout(() => {
       handleClose();
     }, 5000);

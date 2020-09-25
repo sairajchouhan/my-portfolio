@@ -41,7 +41,6 @@
   background-color: #f0f0f0;
   width: 100%;
   padding: 30px;
-  height: 100%;
   margin: 20px;
   border-radius: 6px;
   box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.16);
@@ -74,11 +73,19 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .exp {
+    height: auto;
+  }
   .exp__content {
     margin-right: 30px;
     width: 65%;
   }
-
+  .exp__container {
+    height: auto;
+  }
+  .exp__container img {
+    left: 3%;
+  }
   .exp__content-wrapper {
     padding-left: 50px;
     height: auto;

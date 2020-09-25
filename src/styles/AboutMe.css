@@ -69,14 +69,26 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .aboutMe {
+    height: auto;
+  }
+  .aboutMe__container {
+    height: auto;
+  }
   .aboutMe__content {
     height: 50%;
-    margin-right: 30px;
+    margin-right: 0;
     width: 65%;
+    margin: 30px;
   }
 
   .aboutMe__content-wrapper {
-    padding-left: 50px;
+    padding: 30px;
+    margin: 20px;
+    margin-right: 0;
+  }
+  .aboutMe__container img {
+    right: 3%;
   }
 }
 
