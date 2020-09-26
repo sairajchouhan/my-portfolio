@@ -51,6 +51,23 @@
   line-height: 40px;
   font-size: 1em;
 }
+.aboutMe__content-heading {
+  margin-bottom: 15px;
+  position: relative;
+  width: fit-content;
+  z-index: 1;
+}
+.aboutMe__content-heading h1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #a9dbff;
+  border-radius: 5px;
+}
 
 .aboutMe__qna-ul {
   list-style: none;

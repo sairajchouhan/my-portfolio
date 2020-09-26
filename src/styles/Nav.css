@@ -37,6 +37,29 @@
   width: 100vw;
   z-index: -1000;
 }
+.nav__items > ul li {
+  position: relative;
+  margin: 20px;
+}
+
+.nav__link {
+  padding: 0;
+}
+.nav__link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -20%;
+  left: 0;
+  background-color: #11354c;
+  border-radius: 2px;
+  transform-origin: left;
+  transition: width 0.4s ease;
+}
+.nav__link:hover::after {
+  width: 100%;
+}
 
 a {
   text-decoration: none;

@@ -111,7 +111,9 @@ const Contact = () => {
           <div>
             <img src={chatSvg} className="contact__chatSvg" alt="chatSVG" />
           </div>
-          <p>Let's Chat...</p>
+          <div className="contact__letsChat">
+            <p>Let's Chat</p>
+          </div>
         </div>
       </div>
     </div>

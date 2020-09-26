@@ -16,7 +16,9 @@ const Works = () => {
     <div className="works" id="works">
       <div className="works__mockups">
         <div className="works__mockups-heading">
-          <p>Let's check some of my works</p>
+          <div className="works__mockups-heading-div">
+            <p>Let's check some of my works</p>
+          </div>
         </div>
         <div className="works__mockups-images">
           <img src={spotify} alt="" />

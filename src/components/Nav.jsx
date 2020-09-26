@@ -22,6 +22,7 @@ const Nav = () => {
               smooth={true}
               offset={0} // -60
               duration={500}
+              className="nav__link"
             >
               Works
             </Link>
@@ -34,6 +35,7 @@ const Nav = () => {
               smooth={true}
               offset={0} // -70
               duration={500}
+              className="nav__link"
             >
               About
             </Link>
@@ -45,13 +47,22 @@ const Nav = () => {
               smooth={true}
               offset={0} // -70
               duration={500}
-              // onClick={() => scroll.scrollMore(0)}
+              className="nav__link"
             >
               Contact
             </Link>
           </li>
           <li>
-            <a href="#!">Blog</a>
+            <Link
+              to=""
+              spy={true}
+              smooth={true}
+              offset={0} // -70
+              duration={500}
+              className="nav__link"
+            >
+              Blog
+            </Link>
           </li>
         </ul>
       </div>

@@ -13,8 +13,10 @@ const AboutMe = () => {
         />
         <div className="aboutMe__content">
           <div className="aboutMe__content-wrapper">
+            <div className="aboutMe__content-heading">
+              <h1>A Little bit about me</h1>
+            </div>
             <div className="aboutMe__qna" style={{ marginBottom: '20px' }}>
-              <h1 style={{ marginBottom: '15px' }}>A Little bit about me</h1>
               <p className="aboutMe__q">
                 {' '}
                 <span role="img" aria-label="poning right">
