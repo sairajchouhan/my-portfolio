@@ -14,8 +14,8 @@ const AboutMe = () => {
         <div className="aboutMe__content">
           <div className="aboutMe__content-wrapper">
             <div className="aboutMe__qna" style={{ marginBottom: '20px' }}>
-              <h2 style={{ marginBottom: '15px' }}>A Little bit about me</h2>
-              <p>
+              <h1 style={{ marginBottom: '15px' }}>A Little bit about me</h1>
+              <p className="aboutMe__q">
                 {' '}
                 <span role="img" aria-label="poning right">
                   👉
@@ -38,7 +38,7 @@ const AboutMe = () => {
             </div>
             {/* what defines me */}
             <div className="aboutMe__qna" style={{ marginBottom: '20px' }}>
-              <p style={{ marginBottom: '7px' }}>
+              <p className="aboutMe__q">
                 {' '}
                 <span role="img" aria-label="poning right">
                   👉
@@ -58,9 +58,9 @@ const AboutMe = () => {
             </div>
             {/* why me */}
             <div className="aboutMe__qna">
-              <p style={{ marginBottom: '7px' }}>
+              <p className="aboutMe__q">
                 {' '}
-                <span role="img" aria-label="poning right">
+                <span role="img" aria-label="pointing right">
                   👉
                 </span>{' '}
                 But why me ?

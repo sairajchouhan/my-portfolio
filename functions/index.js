@@ -31,6 +31,10 @@ const transport = nodemailer.createTransport({
   },
 });
 
+app.get('/', (req, res) => {
+  res.send('working');
+});
+
 app.post('/', (req, res) => {
   console.log(req.body);
   const { name, email, message } = req.body;

@@ -68,6 +68,11 @@
   justify-content: 'flex-start';
 }
 
+p.aboutMe__q {
+  margin-bottom: 7px;
+  font-size: 1.4em;
+}
+
 @media screen and (max-width: 1024px) {
   .aboutMe {
     height: auto;
@@ -89,6 +94,10 @@
   }
   .aboutMe__container img {
     right: 3%;
+  }
+  p.aboutMe__q {
+    margin-bottom: 7px;
+    font-size: 1.2em;
   }
 }
 
@@ -155,5 +164,9 @@
   }
   .aboutMe__container img {
     display: none;
+  }
+  p.aboutMe__q {
+    margin-bottom: 7px;
+    font-size: 1.2em;
   }
 }

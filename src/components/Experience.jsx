@@ -1,14 +1,15 @@
 import React from 'react';
 import '../styles/Experience.css';
 import punch from '../images/punch.jpg';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3 } from 'react-icons/fa';
-import { FaJs } from 'react-icons/fa';
-import { FaReact } from 'react-icons/fa';
-import { FaNode } from 'react-icons/fa';
-import { SiMongodb } from 'react-icons/si';
-import { SiRedux } from 'react-icons/si';
-import { SiFirebase } from 'react-icons/si';
+import css3 from '../images/techIcons/css3.svg';
+import firebase from '../images/techIcons/firebase.svg';
+import git from '../images/techIcons/git.svg';
+import html5 from '../images/techIcons/html5.svg';
+import js from '../images/techIcons/js.svg';
+import mongodb from '../images/techIcons/mongodb.svg';
+import nodejs from '../images/techIcons/nodejs.svg';
+import react from '../images/techIcons/react.svg';
+import redux from '../images/techIcons/redux.svg';
 
 const Experience = () => {
   return (
@@ -17,16 +18,16 @@ const Experience = () => {
         <img
           src={punch}
           alt="Two people working on a pc"
-          className="views__img"
+          className="exp__img"
         />
         <div className="exp__content">
           <div className="exp__content-wrapper">
             <div className="exp__heading" style={{ marginBottom: '20px' }}>
-              <h2 style={{ marginBottom: '15px' }}>My Experience</h2>
+              <h1 style={{ marginBottom: '15px' }}>My Experience</h1>
             </div>
             <div className="exp__qna">
               <div className="exp__q">
-                <p>
+                <p className="exp__q-heading">
                   {' '}
                   <span role="img" aria-label="poning right">
                     👉
@@ -35,20 +36,23 @@ const Experience = () => {
                 </p>
               </div>
               <div className="exp__a">
-                <FaHtml5 className="exp__icon" />
-                <FaCss3 className="exp__icon" />
-                <FaJs className="exp__icon" />
-                <FaReact className="exp__icon" />
-                <FaNode className="exp__icon" />
-                <SiMongodb className="exp__icon" />
-                <SiRedux className="exp__icon" />
-                <SiFirebase className="exp__icon" />
-                <p style={{ marginTop: '7px' }}>
+                <p style={{ marginTop: '7px', marginBottom: '7px' }}>
                   I love to build full stack applications using React as
                   frontend, Node and Firebase as a backend.React it is my super
                   power #ReactRider and make webistes that highly satisfy user
                   needs and make your business grow.
                 </p>
+                <div className="exp__a-icons">
+                  <img src={html5} alt="css3" className="exp__icon" />
+                  <img src={css3} alt="css3" className="exp__icon" />
+                  <img src={js} alt="css3" className="exp__icon" />
+                  <img src={react} alt="css3" className="exp__icon" />
+                  <img src={redux} alt="css3" className="exp__icon" />
+                  <img src={nodejs} alt="css3" className="exp__icon" />
+                  <img src={mongodb} alt="css3" className="exp__icon" />
+                  <img src={firebase} alt="css3" className="exp__icon" />
+                  <img src={git} alt="css3" className="exp__icon" />
+                </div>
               </div>
             </div>
             <div className="exp__qna">

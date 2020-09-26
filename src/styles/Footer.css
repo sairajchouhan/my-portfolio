@@ -20,6 +20,12 @@
   list-style-type: none;
   margin-bottom: 20px;
 }
+.footer__icons > ul li {
+  transition: transform 0.2s ease-in-out;
+}
+.footer__icons > ul li:hover {
+  transform: translateY(-3px) scale(1.1);
+}
 
 .footer__icons a {
   color: rgb(200, 216, 224);
