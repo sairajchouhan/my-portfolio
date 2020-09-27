@@ -40,8 +40,9 @@ const transport = nodemailer.createTransport({
 });
 
 app.get('/', (req, res) => {
-  console.log(credentials);
-  res.json({ credentials });
+  // console.log(credentials);
+  // res.json({ credentials });
+  res.send('working');
 });
 
 app.post('/', (req, res) => {

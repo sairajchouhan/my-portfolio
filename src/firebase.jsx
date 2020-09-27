@@ -11,7 +11,4 @@ const firebaseConfig = {
   measurementId: 'G-8SW1S53F95',
 };
 
-export const postURL =
-  'https://us-central1-portfolio-e0fa5.cloudfunctions.net/api/';
-
 const firebaseApp = firebase.initializeApp(firebaseConfig);

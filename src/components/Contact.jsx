@@ -4,6 +4,7 @@ import chatSvg from '../images/love.svg';
 import Slide from 'react-reveal/Slide';
 import { FaTimes } from 'react-icons/fa';
 import axios from 'axios';
+import { postURL } from '../postURL.js';
 
 const Contact = () => {
   const errMsgRef = useRef();
@@ -47,10 +48,7 @@ const Contact = () => {
     } else {
       try {
         setSending(true);
-        await axios.post(
-          'https://us-central1-portfolio-e0fa5.cloudfunctions.net/api',
-          { name, email, message }
-        );
+        await axios.post(postURL, { name, email, message });
         setSending(false);
         handleDisplayMessage('Message sent successfully');
         setName('');
