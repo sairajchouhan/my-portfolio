@@ -8,6 +8,7 @@ import { FaStop } from 'react-icons/fa';
 import useSound from 'use-sound';
 import boopSfx from '../utils/djairhorn.mp3';
 import { motion } from 'framer-motion';
+import arrow from '../images/arrow.svg';
 
 const Hero = () => {
   // const trianglesRef = useRef();
@@ -103,6 +104,16 @@ const Hero = () => {
             />
           </div>
         </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2 }}
+          className="hero__scroll"
+        >
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+        </motion.div>
       </div>
     </>
   );

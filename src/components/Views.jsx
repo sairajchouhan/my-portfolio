@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const Views = () => {
   return (
     <div className="views">
-      <Fade bottom duration={1300} delay={600}>
+      <Fade bottom duration={1000} delay={500}>
         <div className="views__container">
           <img
             src={work}

@@ -108,7 +108,6 @@ textarea {
   height: 70px;
   transition: all 0.5s ease-out;
   transform: translateX(-100%);
-  background-color: lightblue;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
