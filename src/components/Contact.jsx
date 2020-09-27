@@ -46,7 +46,7 @@ const Contact = () => {
     } else {
       try {
         const response = await axios.post(
-          'https://us-central1-portfolio-e0fa5.cloudfunctions.net/api/',
+          'https://us-central1-portfolio-e0fa5.cloudfunctions.net/api',
           { name, email, message }
         );
         console.log(response.data);
