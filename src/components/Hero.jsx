@@ -25,11 +25,27 @@ const Hero = () => {
       <div className="hero">
         <div className="hero__main">
           <div className="hero__content">
-            <motion.p className="hero__contentIntro">
+            <motion.p
+              className="hero__contentIntro"
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            >
               HELLO, I'M <span>SAIRAJ</span>
             </motion.p>
-            <motion.h1>Full stack web developer, and freelancer</motion.h1>
-            <motion.div className="hero__contentSubtitle">
+            <motion.h1
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
+            >
+              Full stack web developer, and freelancer
+            </motion.h1>
+            <motion.div
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.3 }}
+              className="hero__contentSubtitle"
+            >
               <p>
                 I love to work with react and deliver websites that make you
                 feel
@@ -44,7 +60,12 @@ const Hero = () => {
                 </span>{' '}
               </p>
             </motion.div>
-            <motion.div className="hero__end">
+            <motion.div
+              className="hero__end"
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.7 }}
+            >
               <Link
                 activeClass="active"
                 to="contact"
@@ -68,16 +89,19 @@ const Hero = () => {
               </div>
             </motion.div>
           </div>
-          <motion.div
-            className="hero__img"
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{
-              duration: 0.4,
-            }}
-          >
-            <img src={myPic} alt="" />
-          </motion.div>
+          <div>
+            <motion.img
+              className="hero__img"
+              initial={{ opacity: 0, scale: 1.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 2,
+                delay: 0.5,
+              }}
+              src={myPic}
+              alt="pic of me"
+            />
+          </div>
         </div>
       </div>
     </>

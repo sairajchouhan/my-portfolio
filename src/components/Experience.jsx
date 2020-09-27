@@ -68,6 +68,9 @@ const Experience = () => {
                     src={css3}
                     alt="css3"
                     className="exp__icon"
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
                     drag
                     dragConstraints={{
                       top: -50,
@@ -75,9 +78,6 @@ const Experience = () => {
                       right: 50,
                       bottom: 50,
                     }}
-                    variants={iconVariants}
-                    whileHover={'hover'}
-                    whileTap={'tap'}
                   />
                   <motion.img
                     variants={iconVariants}
