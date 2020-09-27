@@ -89,7 +89,7 @@ const Hero = () => {
               </div>
             </motion.div>
           </div>
-          <div>
+          <div className="hero__imgContainer">
             <motion.img
               className="hero__img"
               initial={{ opacity: 0, scale: 1.5 }}

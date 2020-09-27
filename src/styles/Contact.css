@@ -273,4 +273,7 @@ textarea {
   .contact__msgContainer p {
     font-size: 1em;
   }
+  .contact__letsChat p {
+    padding-left: 20px;
+  }
 }
