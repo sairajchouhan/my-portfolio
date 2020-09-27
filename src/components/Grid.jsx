@@ -1,6 +1,7 @@
 import React from 'react';
 import GridItem from './GridItem';
 import '../styles/Grid.css';
+import { motion } from 'framer-motion';
 // These are thumbnail images
 import FindYourDog from '../images/gallery/FindYourDog.jpg';
 import movieList from '../images/gallery/movieList.jpg';
@@ -51,7 +52,11 @@ const Grid = () => {
   return (
     <div className="grid">
       <div className="grid__container">
-        <div className="grid__item">
+        <motion.div
+          className="grid__item"
+          whileHover={{ scale: 1.05 }}
+          onTap={{ scale: 1 }}
+        >
           <GridItem
             img={reactAmazonClone}
             title={'React Amazon Clone'}
@@ -63,8 +68,12 @@ const Grid = () => {
               'The clone is built using react which is the most rending framework now in 2020 and backend is served using firebase using firestore and cloud functions to implement payment gateway integration using stripe'
             }
           />
-        </div>
-        <div className="grid__item">
+        </motion.div>
+        <motion.div
+          className="grid__item"
+          whileHover={{ scale: 1.05 }}
+          onTap={{ scale: 1 }}
+        >
           <GridItem
             img={reactSlackClone}
             title={'React Slack Clone'}
@@ -76,8 +85,12 @@ const Grid = () => {
               'The clone is built using react which is the most rending framework now in 2020 and backend is served using firebase using firestore'
             }
           />
-        </div>
-        <div className="grid__item">
+        </motion.div>
+        <motion.div
+          className="grid__item"
+          whileHover={{ scale: 1.05 }}
+          onTap={{ scale: 1 }}
+        >
           <GridItem
             img={movieList}
             title={'React Context API Usecase'}
@@ -89,8 +102,12 @@ const Grid = () => {
               'This is a tiny project which uses react context API to make a simple movie list app where you can add and remove movies'
             }
           />
-        </div>
-        <div className="grid__item">
+        </motion.div>
+        <motion.div
+          className="grid__item"
+          whileHover={{ scale: 1.05 }}
+          onTap={{ scale: 1 }}
+        >
           <GridItem
             img={FindYourDog}
             title={'Find Your Dog'}
@@ -102,8 +119,12 @@ const Grid = () => {
               'This is a little site that uses fetch api and gets some images of cute dogiees 🐕🐶🐕‍🦺🐩'
             }
           />
-        </div>
-        <div className="grid__item">
+        </motion.div>
+        <motion.div
+          className="grid__item"
+          whileHover={{ scale: 1.05 }}
+          onTap={{ scale: 1 }}
+        >
           <GridItem
             img={csClub}
             title={'Computer Science Club Website'}
@@ -117,7 +138,7 @@ const Grid = () => {
               'CS club official website build on HTML, CSS, JavaScript and bootstrap'
             }
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

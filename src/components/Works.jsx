@@ -4,14 +4,9 @@ import amazon from '../images/amazon.png';
 import slack from '../images/slack.png';
 import spotify from '../images/spotify.png';
 import Grid from './Grid';
-// import Fade from 'react-reveal/Fade';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import Fade from 'react-reveal/Fade';
 
 const Works = () => {
-  // useEffect(() => {
-  //   AOS.init({ duration: 1000 });
-  // }, []);
   return (
     <div className="works" id="works">
       <div className="works__mockups">
@@ -21,9 +16,16 @@ const Works = () => {
           </div>
         </div>
         <div className="works__mockups-images">
-          <img src={spotify} alt="" />
-          <img src={amazon} alt="" />
-          <img src={slack} alt="" />
+          <Fade bottom delay={600} duration={1000} distance="100px">
+            <img src={spotify} alt="" />
+          </Fade>
+          <Fade bottom delay={600} duration={1300}>
+            <img src={amazon} alt="" />
+          </Fade>
+
+          <Fade bottom delay={600} duration={1000} distance="100px">
+            <img src={slack} alt="" />
+          </Fade>
         </div>
       </div>
       <Grid />

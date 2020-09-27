@@ -7,6 +7,7 @@ import axios from 'axios';
 
 const Contact = () => {
   const errMsgRef = useRef();
+  const [sending, setSending] = useState(false);
   const [show, setShow] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -45,17 +46,19 @@ const Contact = () => {
       handleDisplayMessage("Dude..check you email it's probably invalid ");
     } else {
       try {
-        const response = await axios.post(
+        setSending(true);
+        await axios.post(
           'https://us-central1-portfolio-e0fa5.cloudfunctions.net/api',
           { name, email, message }
         );
-        console.log(response.data);
+        setSending(false);
         handleDisplayMessage('Message sent successfully');
         setName('');
         setEmail('');
         setMessage('');
       } catch (err) {
         handleDisplayMessage('Server Error');
+        setSending(false);
       }
     }
   };
@@ -104,7 +107,7 @@ const Contact = () => {
                 id="message"
               />
             </div>
-            <button>Send</button>
+            <button>{sending ? 'sending' : 'send'}</button>
           </form>
         </div>
         <div className="contact__svg">
