@@ -10,6 +10,12 @@ import mongodb from '../images/techIcons/mongodb.svg';
 import nodejs from '../images/techIcons/nodejs.svg';
 import react from '../images/techIcons/react.svg';
 import redux from '../images/techIcons/redux.svg';
+import { motion } from 'framer-motion';
+
+const iconVariants = {
+  hover: { scale: 1.2 },
+  tap: { rotate: 360, scale: 1, transition: { duration: 0.2 } },
+};
 
 const Experience = () => {
   return (
@@ -43,15 +49,141 @@ const Experience = () => {
                   needs and make your business grow.
                 </p>
                 <div className="exp__a-icons">
-                  <img src={html5} alt="css3" className="exp__icon" />
-                  <img src={css3} alt="css3" className="exp__icon" />
-                  <img src={js} alt="css3" className="exp__icon" />
-                  <img src={react} alt="css3" className="exp__icon" />
-                  <img src={redux} alt="css3" className="exp__icon" />
-                  <img src={nodejs} alt="css3" className="exp__icon" />
-                  <img src={mongodb} alt="css3" className="exp__icon" />
-                  <img src={firebase} alt="css3" className="exp__icon" />
-                  <img src={git} alt="css3" className="exp__icon" />
+                  <motion.img
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    src={html5}
+                    alt="css3"
+                    className="exp__icon"
+                  />
+                  <motion.img
+                    src={css3}
+                    alt="css3"
+                    className="exp__icon"
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                  />
+                  <motion.img
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    src={js}
+                    alt="css3"
+                    className="exp__icon"
+                  />
+                  <motion.img
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    src={react}
+                    alt="css3"
+                    className="exp__icon"
+                  />
+                  <motion.img
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    src={redux}
+                    alt="css3"
+                    className="exp__icon"
+                  />
+                  <motion.img
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    src={nodejs}
+                    alt="css3"
+                    className="exp__icon"
+                  />
+                  <motion.img
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    src={mongodb}
+                    alt="css3"
+                    className="exp__icon"
+                  />
+                  <motion.img
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    src={firebase}
+                    alt="css3"
+                    className="exp__icon"
+                  />
+                  <motion.img
+                    variants={iconVariants}
+                    whileHover={'hover'}
+                    whileTap={'tap'}
+                    drag
+                    dragConstraints={{
+                      top: -50,
+                      left: -50,
+                      right: 50,
+                      bottom: 50,
+                    }}
+                    src={git}
+                    alt="css3"
+                    className="exp__icon"
+                  />
                 </div>
               </div>
             </div>

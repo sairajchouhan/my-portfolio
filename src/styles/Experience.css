@@ -80,6 +80,8 @@
 .exp__icon {
   font-size: 3em;
   margin-right: 15px;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 .exp__q p {
   font-size: 1.4em;

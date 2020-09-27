@@ -7,6 +7,7 @@ import { FaPlay } from 'react-icons/fa';
 import { FaStop } from 'react-icons/fa';
 import useSound from 'use-sound';
 import boopSfx from '../utils/djairhorn.mp3';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   // const trianglesRef = useRef();
@@ -24,11 +25,11 @@ const Hero = () => {
       <div className="hero">
         <div className="hero__main">
           <div className="hero__content">
-            <p className="hero__contentIntro">
+            <motion.p className="hero__contentIntro">
               HELLO, I'M <span>SAIRAJ</span>
-            </p>
-            <h1>Full stack web developer, and freelancer</h1>
-            <div className="hero__contentSubtitle">
+            </motion.p>
+            <motion.h1>Full stack web developer, and freelancer</motion.h1>
+            <motion.div className="hero__contentSubtitle">
               <p>
                 I love to work with react and deliver websites that make you
                 feel
@@ -42,8 +43,8 @@ const Hero = () => {
                   👇👇
                 </span>{' '}
               </p>
-            </div>
-            <div className="hero__end">
+            </motion.div>
+            <motion.div className="hero__end">
               <Link
                 activeClass="active"
                 to="contact"
@@ -65,11 +66,18 @@ const Hero = () => {
                   <FaPlay className="hero__contentPlayBtn" />
                 )}
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="hero__img">
+          <motion.div
+            className="hero__img"
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.4,
+            }}
+          >
             <img src={myPic} alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
