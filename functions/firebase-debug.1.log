@@ -1,0 +1,38 @@
+[debug] [2020-09-27T05:14:44.137Z] ----------------------------------------------------------------------
+[debug] [2020-09-27T05:14:44.139Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SAIRAJ\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-09-27T05:14:44.140Z] CLI Version:   8.10.0
+[debug] [2020-09-27T05:14:44.140Z] Platform:      win32
+[debug] [2020-09-27T05:14:44.140Z] Node Version:  v14.4.0
+[debug] [2020-09-27T05:14:44.141Z] Time:          Sun Sep 27 2020 10:44:44 GMT+0530 (India Standard Time)
+[debug] [2020-09-27T05:14:44.141Z] ----------------------------------------------------------------------
+[debug] [2020-09-27T05:14:44.141Z] 
+[debug] [2020-09-27T05:14:44.147Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-27T05:14:44.148Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\SAIRAJ\Desktop\Protfolio\portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[debug] [2020-09-27T05:14:56.977Z] ----------------------------------------------------------------------
+[debug] [2020-09-27T05:14:56.980Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SAIRAJ\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2020-09-27T05:14:56.980Z] CLI Version:   8.10.0
+[debug] [2020-09-27T05:14:56.980Z] Platform:      win32
+[debug] [2020-09-27T05:14:56.981Z] Node Version:  v14.4.0
+[debug] [2020-09-27T05:14:56.982Z] Time:          Sun Sep 27 2020 10:44:56 GMT+0530 (India Standard Time)
+[debug] [2020-09-27T05:14:56.982Z] ----------------------------------------------------------------------
+[debug] [2020-09-27T05:14:56.982Z] 
+[debug] [2020-09-27T05:14:56.993Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-09-27T05:14:56.994Z] > authorizing via signed-in user
+[debug] [2020-09-27T05:14:56.995Z] [iam] checking project portfolio-e0fa5 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2020-09-27T05:14:56.999Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-e0fa5:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}

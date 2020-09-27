@@ -10,12 +10,13 @@ app.use(cors({ origin: true }));
 app.use(express.json());
 
 const myOAuth2Client = new OAuth2(
-  functions.config().client.key,
-  functions.config().clientsecret.key,
+  '717967529834-694sehmfju2035i3h8de6a1f6rmsb0t2.apps.googleusercontent.com',
+  'jsCWlIoUTsoPZA7ke3lD6Kk_',
   'https://developers.google.com/oauthplayground'
 );
 myOAuth2Client.setCredentials({
-  refresh_token: functions.config().refreshtoken.key,
+  refresh_token:
+    '1//04UOCVgYXpHkGCgYIARAAGAQSNwF-L9IrZcNjdKmt1--dMgdtAzRdUASUvblWuQr0eLgwg4STAZNt6mTCUGT1q3oJe-rkb92WLe0',
 });
 const myAccessToken = myOAuth2Client.getAccessToken();
 
@@ -24,22 +25,26 @@ const transport = nodemailer.createTransport({
   auth: {
     type: 'OAuth2',
     user: 'lotedivra@gmail.com',
-    clientId: functions.config().client.key,
-    clientSecret: functions.config().clientsecret.key,
-    refreshToken: functions.config().refreshtoken.key,
+    clientId:
+      '717967529834-694sehmfju2035i3h8de6a1f6rmsb0t2.apps.googleusercontent.com',
+    clientSecret: 'jsCWlIoUTsoPZA7ke3lD6Kk_',
+    refreshToken:
+      '1//04UOCVgYXpHkGCgYIARAAGAQSNwF-L9IrZcNjdKmt1--dMgdtAzRdUASUvblWuQr0eLgwg4STAZNt6mTCUGT1q3oJe-rkb92WLe0',
     accessToken: myAccessToken,
   },
 });
 
 app.get('/', (req, res) => {
   res.send('working');
+  console.log('this is client id', functions.config().data.clientid);
 });
 
 app.post('/', (req, res) => {
   console.log(req.body);
+  console.log(functions.confing().client.id);
   const { name, email, message } = req.body;
   const mailOptionsToMe = {
-    from: functions.config().user.key, // sender
+    from: 'lotedivra@gmail.com', // sender
     to: 'sairaj2119@gmail.com', // receiver
     subject: `A Message from ${name}`, // Subject
     html: `<p>${name}</p>
@@ -48,7 +53,7 @@ app.post('/', (req, res) => {
           `,
   };
   const mailOptionsToUser = {
-    from: functions.config().user.key, // sender
+    from: 'lotedivra@gmail.com', // sender
     to: email, // receiver
     subject: `A Message from Sairaj`, // Subject
     html: `<p>Thank You for contacting me</p>
