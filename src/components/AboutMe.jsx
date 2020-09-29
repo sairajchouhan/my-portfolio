@@ -27,12 +27,13 @@ const AboutMe = () => {
                   Who am i ?
                 </p>
                 <p>
-                  Sairaj Chouhan, Hyderabad, India. Algorithamist. Do what you
-                  love, love what you do #myMotto{' '}
+                  I'm Sairaj Chouhan, from Hyderabad, India. Apart from being a
+                  developer, I’m an Algorithmist and an enthusiast in tech. Do
+                  what you love, love what you do #Motto keeps me going{' '}
                   <span role="img" aria-label="fire">
                     🔥
                   </span>
-                  . I’m 18 and coding flows through my viens{' '}
+                  . I’m 18 and coding flows through my veins{' '}
                   <span role="img" aria-label="laptop">
                     👨‍💻
                   </span>
@@ -71,14 +72,14 @@ const AboutMe = () => {
                 </p>
                 <div style={{ display: 'flex' }}>
                   <ul className="aboutMe__qna-ul">
+                    <li className="aboutMe__qna-li" style={{ display: 'flex' }}>
+                      <span>#</span>I communicate very well
+                    </li>
                     <li className="aboutMe__qna-li">
                       # Not only doing what is said to do but i constantly
                       introduce new ideas and take initiatives
                     </li>
                     <li className="aboutMe__qna-li"># I am a problem solver</li>
-                    <li className="aboutMe__qna-li">
-                      # I communicate very well
-                    </li>
                     <li className="aboutMe__qna-li">
                       # Open to new ideas and tecnologies
                     </li>

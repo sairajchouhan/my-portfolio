@@ -66,4 +66,15 @@
   .blogList__post--content {
     margin-left: 0px;
   }
+  .blogList__post--title > p {
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .blogList__post--subtitles {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .blogList__post--subtitles p {
+    font-size: 1rem;
+  }
 }

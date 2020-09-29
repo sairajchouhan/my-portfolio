@@ -224,6 +224,10 @@
     flex-direction: column;
     text-align: center;
     height: 90vh;
+    padding-top: 80px;
+  }
+  .hero__imgContainer {
+    order: -1;
   }
 
   img.hero__img {

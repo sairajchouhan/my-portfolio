@@ -88,7 +88,7 @@ const Nav = ({ blog }) => {
             </li>
           </ul>
         </div>
-        <MobileNav />
+        <MobileNav blog />
         <div className="blur"></div>
       </nav>
     );

@@ -46,8 +46,8 @@ const Experience = () => {
                 <div className="exp__a">
                   <p style={{ marginTop: '7px', marginBottom: '7px' }}>
                     I love to build full stack applications using React as
-                    frontend, Node and Firebase as a backend.React it is my
-                    super power #ReactRider and make webistes that highly
+                    frontend, Node and Firebase as a backend. React it is my
+                    super power (#ReactRider) and I make webistes that highly
                     satisfy user needs and make your business grow.
                   </p>
                   <div className="exp__a-icons">

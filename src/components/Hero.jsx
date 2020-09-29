@@ -45,8 +45,8 @@ const Hero = () => {
               className="hero__contentSubtitle"
             >
               <p>
-                I love to work with react and deliver websites that make you
-                feel
+                I love to work with react and deliver fullstack websites that
+                make you feel
               </p>
               <p>
                 awesome and dance{' '}

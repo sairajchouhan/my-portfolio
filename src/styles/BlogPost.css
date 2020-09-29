@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 575.98px) {
   .blogPost {
-    margin: 20px;
+    margin: 10px;
     margin-top: 80px;
   }
   .blogPost__title {
@@ -51,5 +51,18 @@
   }
   .blogPost__block--img {
     margin: 30px 0;
+  }
+  .blogPost__code {
+    padding: 0;
+    line-height: initial;
+    overflow-x: scroll;
+  }
+  .blogPost__chunk {
+    padding: 5px;
+    line-height: 30px;
+  }
+  ..blogPost__title {
+    font-size: 2em;
+    text-align: center;
   }
 }

@@ -78,6 +78,10 @@
 
 .aboutMe__qna-li {
   margin-bottom: 5px;
+  display: flex;
+}
+.aboutMe__qna-li span {
+  margin-right: 5px;
 }
 
 .aboutMe__qna-uls {

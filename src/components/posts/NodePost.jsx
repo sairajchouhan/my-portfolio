@@ -30,7 +30,7 @@ const BlogPost = () => {
           </p>
         </div>
         <div className="blogPost__block--img">
-          <img src={linkedlist} alt="node" />
+          <img src={linkedlist} alt="node" style={{ width: '80%' }} />
         </div>
         <div className="blogPost__chunk">
           <p>
@@ -58,12 +58,15 @@ const BlogPost = () => {
           </p>
         </div>
         <div className="blogPost__block--img">
-          <img src={reqres} alt="node req res cycle" style={{ width: '80%' }} />
+          <img
+            src={reqres}
+            alt="node req res cycle"
+            style={{ width: '100%' }}
+          />
         </div>
         <div className="blogPost__code">
           <pre>
             {`
-            
             app.get('/', (request, response) => {
                   response.send('hello PWJ community')
               })      
