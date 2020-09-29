@@ -170,6 +170,9 @@
     height: 90vh;
     padding-top: 70px;
   }
+  .hero__imgContainer {
+    order: -1;
+  }
 
   .hero__img {
     order: -1;

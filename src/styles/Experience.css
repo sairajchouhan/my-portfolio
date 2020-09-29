@@ -103,6 +103,17 @@
 .exp__q-heading {
   font-size: 1.2em;
 }
+.experience__resume {
+  width: fit-content;
+  margin-left: auto;
+  background-color: #ffdb94;
+  padding: 15px 10px;
+  border-radius: 50px;
+}
+.experience__resume a {
+  color: black;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 1024px) {
   .exp {
@@ -160,7 +171,6 @@
   .exp__content-wrapper {
     padding: 20px;
     width: 100%;
-    height: 100vh !important;
   }
 
   .exp__content {
@@ -178,6 +188,10 @@
     display: none;
   }
   .exp__a-icons {
+    text-align: center;
+  }
+  .experience__resume {
+    width: 100%;
     text-align: center;
   }
 }

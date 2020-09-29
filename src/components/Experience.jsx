@@ -12,6 +12,7 @@ import react from '../images/techIcons/react.svg';
 import redux from '../images/techIcons/redux.svg';
 import { motion } from 'framer-motion';
 import Fade from 'react-reveal/Fade';
+import resume from '../utils/resume.pdf';
 
 const iconVariants = {
   hover: { scale: 1.2 },
@@ -201,7 +202,7 @@ const Experience = () => {
                 </div>
                 <div className="exp__a" style={{ color: '#11354c' }}>
                   <p>
-                    # Frontend developer for{' '}
+                    <span>#</span> Frontend developer for{' '}
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -224,6 +225,11 @@ const Experience = () => {
                     a digital educational startup
                   </p>
                 </div>
+              </div>
+              <div className="experience__resume">
+                <a href={resume} download="download">
+                  Download Resume
+                </a>
               </div>
             </div>
           </div>

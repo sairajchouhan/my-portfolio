@@ -52,12 +52,20 @@ const AboutMe = () => {
                 </p>
                 <div className="aboutMe__qna-uls">
                   <ul className="aboutMe__qna-ul">
-                    <li className="aboutMe__qna-li"># Perseverence</li>
-                    <li className="aboutMe__qna-li"># Limitless Attitude</li>
+                    <li className="aboutMe__qna-li">
+                      <span>#</span>Perseverence
+                    </li>
+                    <li className="aboutMe__qna-li">
+                      <span>#</span>Limitless Attitude
+                    </li>
                   </ul>
                   <ul className="aboutMe__qna-ul">
-                    <li className="aboutMe__qna-li"># Balance</li>
-                    <li className="aboutMe__qna-li"># Exponiential Growth</li>
+                    <li className="aboutMe__qna-li">
+                      <span>#</span>Balance
+                    </li>
+                    <li className="aboutMe__qna-li">
+                      <span>#</span>Exponiential Growth
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -76,15 +84,17 @@ const AboutMe = () => {
                       <span>#</span>I communicate very well
                     </li>
                     <li className="aboutMe__qna-li">
-                      # Not only doing what is said to do but i constantly
-                      introduce new ideas and take initiatives
-                    </li>
-                    <li className="aboutMe__qna-li"># I am a problem solver</li>
-                    <li className="aboutMe__qna-li">
-                      # Open to new ideas and tecnologies
+                      <span>#</span>Not only doing what is said to do but i
+                      constantly introduce new ideas and take initiatives
                     </li>
                     <li className="aboutMe__qna-li">
-                      # I provide constructive critisim
+                      <span>#</span>I am a problem solver
+                    </li>
+                    <li className="aboutMe__qna-li">
+                      <span>#</span>Open to new ideas and tecnologies
+                    </li>
+                    <li className="aboutMe__qna-li">
+                      <span>#</span>I provide constructive critisim
                     </li>
                   </ul>
                 </div>
