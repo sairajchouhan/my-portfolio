@@ -9,6 +9,10 @@ import Works from './components/Works';
 import Views from './components/Views';
 import About from './components/About';
 import { motion, AnimatePresence } from 'framer-motion';
+import Nav from './components/Nav';
+import { Route, Switch } from 'react-router-dom';
+import BlogList from './components/BlogList';
+import NodePost from './components/posts/NodePost';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,12 +26,25 @@ function App() {
   if (!isLoading) {
     return (
       <div className="app">
-        <Hero />
-        <Views />
-        <Works />
-        <About />
-        <Contact />
-        <Footer />
+        <Switch>
+          <Route exact path="/blog/:name">
+            <Nav blog />
+            <NodePost />
+          </Route>
+          <Route exact path="/blog">
+            <Nav blog />
+            <BlogList />
+          </Route>
+          <Route exact path="/">
+            <Nav />
+            <Hero />
+            <Views />
+            <Works />
+            <About />
+            <Contact />
+            <Footer />
+          </Route>
+        </Switch>
       </div>
     );
   } else {

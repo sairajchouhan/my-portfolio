@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from './Nav';
 import '../styles/Hero.css';
 import myPic from '../images/raj.png';
 import { Link } from 'react-scroll';
@@ -8,7 +7,6 @@ import { FaStop } from 'react-icons/fa';
 import useSound from 'use-sound';
 import boopSfx from '../utils/djairhorn.mp3';
 import { motion } from 'framer-motion';
-import arrow from '../images/arrow.svg';
 
 const Hero = () => {
   // const trianglesRef = useRef();
@@ -22,7 +20,6 @@ const Hero = () => {
 
   return (
     <>
-      <Nav />
       <div className="hero">
         <div className="hero__main">
           <div className="hero__content">
@@ -110,9 +107,9 @@ const Hero = () => {
           transition={{ delay: 2 }}
           className="hero__scroll"
         >
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>
+          <div className="chevron"></div>
+          <div className="chevron"></div>
+          <div className="chevron"></div>
         </motion.div>
       </div>
     </>
