@@ -16,13 +16,13 @@ const Works = () => {
           </div>
         </div>
         <div className="works__mockups-images">
-          <Fade bottom delay={300} duration={1000} distance="100px">
+          <Fade bottom delay={300} duration={900} distance="100px">
             <img src={spotify} alt="" />
           </Fade>
-          <Fade bottom delay={300} duration={1200}>
+          <Fade bottom delay={300} duration={1000}>
             <img src={amazon} alt="" />
           </Fade>
-          <Fade bottom delay={300} duration={1000} distance="100px">
+          <Fade bottom delay={300} duration={900} distance="100px">
             <img src={slack} alt="" />
           </Fade>
         </div>

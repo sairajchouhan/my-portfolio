@@ -69,7 +69,10 @@ const Contact = () => {
         setSending(true);
         await axios.post(postURL, { name, email, message });
         setSending(false);
-        handleDisplayMessage('Message sent successfully', 'success');
+        handleDisplayMessage(
+          'Message sent successfully, check you inbox',
+          'success'
+        );
         setName('');
         setEmail('');
         setMessage('');
