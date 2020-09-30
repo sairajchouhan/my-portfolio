@@ -13,6 +13,7 @@ import Nav from './components/Nav';
 import { Route, Switch } from 'react-router-dom';
 import BlogList from './components/BlogList';
 import NodePost from './components/posts/NodePost';
+import WhatILearnt from './components/WhatILearnt';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
             <Works />
             <About />
             <Contact />
+            <WhatILearnt />
             <Footer />
           </Route>
         </Switch>

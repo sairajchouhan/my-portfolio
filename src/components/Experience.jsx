@@ -32,7 +32,7 @@ const Experience = () => {
           <div className="exp__content">
             <div className="exp__content-wrapper">
               <div className="exp__heading" style={{ marginBottom: '20px' }}>
-                <h1 style={{ marginBottom: '15px' }}>My Experience</h1>
+                <h1>My Experience</h1>
               </div>
               <div className="exp__qna">
                 <div className="exp__q">
@@ -200,9 +200,9 @@ const Experience = () => {
                     Position of responsibilities ?
                   </p>
                 </div>
-                <div className="exp__a" style={{ color: '#11354c' }}>
+                <div className="exp__a">
                   <p>
-                    <span>#</span> Frontend developer for{' '}
+                    # Frontend developer for{' '}
                     <a
                       target="_blank"
                       rel="noopener noreferrer"

@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Works.css';
 import amazon from '../images/amazon.png';
 import slack from '../images/slack.png';
-import spotify from '../images/spotify.png';
+import csClub from '../images/csClub.png';
 import Grid from './Grid';
 import Fade from 'react-reveal/Fade';
 
@@ -17,7 +17,7 @@ const Works = () => {
         </div>
         <div className="works__mockups-images">
           <Fade bottom delay={300} duration={900} distance="100px">
-            <img src={spotify} alt="" />
+            <img src={csClub} alt="" />
           </Fade>
           <Fade bottom delay={300} duration={1000}>
             <img src={amazon} alt="" />

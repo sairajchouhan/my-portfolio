@@ -163,12 +163,15 @@
 
 @media (max-width: 575.98px) {
   .exp__content p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 30px;
+  }
+  .exp__a p {
+    font-size: 0.9em;
   }
 
   .exp__content-wrapper {
-    padding: 20px;
+    padding: 18px;
     width: 100%;
   }
 
